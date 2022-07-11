@@ -1,0 +1,36 @@
+dir
+dotnet tool list -g
+dotnet tool install --global dotnet-ef --version 6.0.6
+dotnet tool list -g
+dotnet ef -h
+dotnet ef migrations add InitialCreate -o Data/Migrations
+cd API
+dotnet ef migrations add InitialCreate -o Data/Migrations
+dotnet ef database update
+dotnet watch run
+dotnet ef migrations update UpdateProducts -o Data/Migrations
+dotnet ef migrations -h
+dotnet ef migrations remove
+dotnet ef migrations Add UpdateProducts -o Data/Migrations
+dotnet ef database update
+dotnet watch run
+cls
+cd ..
+dotnet new
+dotnet new classlib -o Core
+dotnet new classlib -o Infrastructure
+dotnet sln add Core
+dotnet sln add Infrastructure
+cd API
+dotnet add reference ../Infrastructure
+cd ..
+cd Infrastructure
+dotnet add reference ../Core
+cd ..
+dotnet restore
+history
+help
+doskey/history
+doskey > commands_01.txt
+doskey/history commands_01.txt
+doskey /history> commands_01.txt
