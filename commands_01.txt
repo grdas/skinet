@@ -34,3 +34,40 @@ doskey/history
 doskey > commands_01.txt
 doskey/history commands_01.txt
 doskey /history> commands_01.txt
+dotnet restore
+dotnet build
+dotnet watch run
+cd API
+dotnet watch run
+cd..
+git status
+git init
+git add .
+git commit 'Initial Commit'
+git commit "Initial Commit"
+git commit -m "Initial Commit"
+git remote add origin https://github.com/grdas/skinet.git
+git push -u origin main
+git push -u origin master
+git remote add origin https://github.com/grdas/skinet.git
+git push -u origin master
+dotnet run
+cd API
+dotenet run
+dotnet run
+cls
+cd ..
+dotnet ef database drop -p Infrastructure -s API
+dotnet ef migrations remove -p Infrastrusture -s API
+dotnet ef migrations remove -p Infrastructure -s API
+dotnet ef migrations add InitialCreate -p Infrastructure -a API -o Data/Migrations
+dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations
+dotnet ef migrations remove -p Infrastructure -s API
+dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations
+cd API
+dotnet watch run
+dotnet run
+doskey /history >> commands_01.txt
+cd ..
+dir
+doskey /history >> commands_01.txt
