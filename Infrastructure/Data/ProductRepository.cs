@@ -7,12 +7,11 @@ namespace Infrastructure.Data
     public class ProductRepository : IProductRepository
     {
 
-        private StoreContext _context { get; }
+        private StoreContext _context;
 
         public ProductRepository(StoreContext context)
         {
             _context = context;
-
         }
 
         public async Task<Product> GetProductByIdAsync(int id)
